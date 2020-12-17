@@ -66,7 +66,7 @@ assert ([
 assert ([
     _lifecycle,
     _lifecycle_life, _lifecycle_death,
-    ["killed"],
+    [QGVAR(killed)],
     { true },
     {},
     _lifecycle_life + _lifecycle_death
@@ -93,7 +93,7 @@ assert ([
 assert ([
     _lifecycle,
     _lifecycle_unconscious, _lifecycle_death,
-    ["killed"],
+    [QGVAR(killed)],
     { true },
     {},
     _lifecycle_unconscious + _lifecycle_death
