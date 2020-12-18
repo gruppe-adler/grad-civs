@@ -2,6 +2,18 @@
 
 if (!(EGVAR(main,enabled))) exitWith {};
 
+GVAR(houseworkAnimationSets) = [
+    "STAND1",
+    "STAND2",
+    "STAND_U1",
+    "STAND_U2",
+    "STAND_U3",
+    "WATCH",
+    "WATCH2",
+    "GUARD",
+    "LISTEN_BRIEFING"
+];
+
 if (isServer || CBA_isHeadlessClient) then {
     [
         QEGVAR(lifecycle,localSpawn),

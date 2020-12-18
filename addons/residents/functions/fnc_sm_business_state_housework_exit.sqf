@@ -1,3 +1,4 @@
 #include "..\script_component.hpp"
 
-[QEGVAR(common,switchMove), [_this, ""]] call CBA_fnc_globalEvent;
+_this call BIS_fnc_ambientAnim__terminate;
+{_this disableAI _x} forEach ["AUTOTARGET", "FSM", "TARGET"]; //  BIS_fnc_ambientAnim__terminate enables some AI features

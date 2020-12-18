@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 
 private _house = _this getVariable ["grad_civs_home", objNull];
-_this setVariable ["grad_civs_housework_time", random [5, 15, 120]];
+_this setVariable ["grad_civs_housework_time", random [5, 15, 20]];
 _this call EFUNC(activities,forceEmotionSpeed);
 
 if (isNull _house) exitWith {};
@@ -18,8 +18,7 @@ if (random 4 > 1) then { // in 2 of 3 cases , do change position
 
     _this moveTo _pos;
 } else {
-    private _anim = selectRandom ["Acts_B_M05_briefing", "Acts_JetsOfficerSpilling", "acts_miller_knockout", "InBaseMoves_HandsBehindBack1"];
-    [QEGVAR(common,switchMove), [_this, _anim]] call CBA_fnc_globalEvent;
+    [_this, selectRandom GVAR(houseworkAnimationSets), "NONE", objNull, true] call BIS_fnc_ambientAnim;
 };
 
 /*
