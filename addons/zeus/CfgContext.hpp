@@ -23,5 +23,11 @@ class zen_context_menu_actions {
             condition = QUOTE(_this call FUNC(context_condition_dismissCiv));
             icon = QPATHTOF(ui\icon_zen_context_dismissCiv.paa);
         };
+        class AddUnit {
+            displayName = "Add Unit";
+            statement = QUOTE(_this call FUNC(context_statement_addUnit));
+            condition = QUOTE(_this call FUNC(context_condition_addUnit));
+            icon = QPATHTOF(ui\icon_zen_context_addUnit.paa);
+        };
     };
 };

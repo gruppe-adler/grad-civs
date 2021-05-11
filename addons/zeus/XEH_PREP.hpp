@@ -1,8 +1,10 @@
 PREP(containAtLeastOneCiv);
+PREP(context_condition_addUnit);
 PREP(context_condition_dismissCiv);
 PREP(context_condition_doCarryOn);
 PREP(context_condition_doStop);
 PREP(context_condition_gradCivs);
+PREP(context_statement_addUnit);
 PREP(context_statement_dismissCiv);
 PREP(context_statement_doCarryOn);
 PREP(context_statement_doStop);
